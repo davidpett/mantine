@@ -135,6 +135,7 @@ export const BarChart = factory<BarChartFactory>((_props, ref) => {
     orientation,
     dir,
     valueFormatter,
+    children,
     ...others
   } = props;
 
@@ -300,6 +301,7 @@ export const BarChart = factory<BarChartFactory>((_props, ref) => {
 
           {bars}
           {referenceLinesItems}
+          {children}
         </ReChartsBarChart>
       </ResponsiveContainer>
     </Box>
